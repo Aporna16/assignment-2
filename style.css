@@ -34,6 +34,7 @@ margin-right: 200px;
     justify-content: center;
     height: 800px;
     width: 100%;
+    overflow: hidden;
 }
 .banner-title{
     color: #131313;
@@ -57,16 +58,112 @@ header section{
     grid-gap: 2em;
 }
 .grid-cell1 img{
-    width: 342px;
-    height: 342px;
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
 }
 .grid-cell1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.grid-cell2{
+/*.grid-cell2{
     display: flex;
+    align-items: center;
+}
+.grid-container2{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 6em;
+}
+
+/*--------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-container2 body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.grid-container2{
+    height: 70vh;
+    width: 70%;
+    display: flex;
+}
+.text-container{
+    width: 50%;
+
+}
+.image-container{
+    height: 70%;
+    width: 50%;
+    padding: 50px;
+    overflow: hidden;
+}
+.image-container>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-btn{
+    text-align: center;
+color: #FFFFFF;
+border-radius: 8px;
+font-size: large;
+border: none;
+background-color: #FF900E;
+padding: 18px 32px;
+margin-bottom: 24px;
+border-radius: 5px;
+}
+.cards article{
+    padding: 0.5em 2.5em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.feature h2{
+    font-size: 2.5em;
+    padding-left: .5em;
+    border-left: 5px solid #FF900E;
+}
+.s2{
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+.facts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 6em;
+    margin-top: 4em;
+}
+.fact{
+    text-align: center;
+    border: 2px solid #FF900E;
+    padding: 2em 3.7em;
+    margin-bottom: 1.5em;
+}
+.fo-titles{
+    justify-content: center;
+    align-items: center;
+   padding:  50px;
+    justify-content: space-between;
+}
+.footer-images{
+    mix-blend-mode: luminosity;
+    height: 40px;
+    width: 120px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 50px;
+}
+.feedback{
     align-items: center;
 }
 
